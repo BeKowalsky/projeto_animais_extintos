@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, .header_left > a, ul {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+header {
+    justify-content: space-between;
+    padding: 15px 50px 15px 50px;
+    background-color: #CDB891;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.39);
+}
+
+.header_left > a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+#icon {
+    width: 40px;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+.header_list > li {
+    margin-right: 20px;
+    list-style: none;
+    font-size: 18px;
+}
+
+.header_list > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.home_line, .about_line, .contact_line {
+    height: 3px;
+    width: 0px;
+    background-color: brown;
+    transition: all 0.5s linear;
+}
+
+.line_hover {
+    transition: all 0.5s linear;
+    width: 2em;
+}
+
+.line_hover_contact {
+    transition: all 0.5s linear;
+    width: 3em;
+}
+
+.header_list > li:last-child {
+    margin-right: 0;
+}
+
+body {
+    background-color: #cdb89150;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.animal {
+    width: 300px;
+    height: 520px;
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.329);
+    margin: 0 50px 50px 50px;
+    transition: all 0.5s;
+}
+
+.animal:hover {
+    transition: all 0.5s;
+    transform: scale(1.05, 1.05);
+}
+
+.animal > h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+    text-decoration: underline;
+}
+
+.animal > p {
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.animal > p:nth-child(3) {
+    margin-top: 30px;
+}
+
+.animal > p:last-child {
+    margin-top: 30px;
+}
+
+.img_animal_um, .img_animal_dois, .img_animal_tres, .img_animal_quatro, .img_animal_cinco, .img_animal_seis, .img_animal_sete, .img_animal_oito, .img_animal_nove {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.img_animal_um {
+    background-image: url('./img/mamute.webp');
+}
+
+.img_animal_dois {
+    background-image: url('./img/TartarugaGigantedeGalapagos.webp');
+}
+
+.img_animal_tres {
+    background-image: url('./img/rinoceronte_negro_do_oeste.jpeg');
+}
+
+.img_animal_quatro {
+    background-image: url('./img/limpa_folha_do_nordeste.jpeg');
+}
+
+.img_animal_cinco {
+    background-image: url('./img/Foca-Monge-das-Caraíbas.jpeg');
+}
+
+.img_animal_seis {
+    background-image: url('./img/ararinha_azul.jpeg');
+}
+
+.img_animal_sete {
+    background-image: url('./img/ibex.jpeg');
+}
+
+.img_animal_oito {
+    background-image: url('./img/Tigre-de-Java.jpeg');
+}
+
+.img_animal_nove {
+    background-image: url('./img/tubaraolagarto.webp');
+}
+
+footer {
+    background-color: #CDB891;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.39);
+}
+
+
+@media screen and (max-width: 670px){
+    #icon {
+        width: 30px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    header {
+        padding: 15px 20px 15px 20px; 
+    }
+
+    .header_list > li {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+}
